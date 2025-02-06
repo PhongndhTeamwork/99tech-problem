@@ -3,9 +3,9 @@ import { createUser, updateUser, getUsers, deleteUser } from '@controller/user.c
 
 const router = Router();
 
-router.get('/create', createUser);
-router.get('/update/:id', updateUser);
-router.get('/delete/:id', deleteUser);
+router.post('/create', createUser);
+router.put('/update/:id', updateUser);
+router.delete('/delete/:id', deleteUser);
 router.get('/get', getUsers);
 
 export const userRouter = router;
