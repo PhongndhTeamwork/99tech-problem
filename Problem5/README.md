@@ -43,7 +43,7 @@ Query Parameters:
 name (optional) - Filter users by name (case-insensitive, contains search).
 
 Response:
-```sh
+```json
 [
   { "id": 1, "name": "John Doe", "email": "john@example.com" },
   { "id": 2, "name": "Jane Doe", "email": "jane@example.com" }
@@ -57,7 +57,7 @@ Endpoint: GET /create
 Description: Creates a new user.
 
 Request Body:
-```sh
+```json
 {
   "name": "John Doe",
   "email": "john@example.com"
@@ -65,7 +65,7 @@ Request Body:
 ```
 
 Response:
-```sh
+```json
 {
   "message": "User created successfully",
   "user": { "id": 1, "name": "John Doe", "email": "john@example.com" }
@@ -79,19 +79,19 @@ Endpoint: GET /update/:id
 Description: Updates user information.
 
 Request Parameters:
-```sh
+```
 id (required) - User ID to update.
 ```
 
 Request Body:
-```sh
+```json
 {
   "name": "Updated Name",
   "email": "updated@example.com"
 }
 ```
 Response:
-```sh
+```json
 {
   "message": "User updated successfully",
   "user": { "id": 1, "name": "Updated Name", "email": "updated@example.com" }
@@ -104,12 +104,12 @@ Endpoint: GET /delete/:id
 Description: Deletes a user by ID.
 
 Request Parameters:
-```sh
+```
 id (required) - User ID to delete.
 ```
 
 Response:
-```sh
+```json
 {
   "message": "User deleted successfully"
 }
@@ -118,7 +118,7 @@ Response:
 Error Handling
 
 All endpoints return a 500 status code with the following response if an error occurs:
-```sh
+```json
 {
   "error": "Something went wrong"
 }
