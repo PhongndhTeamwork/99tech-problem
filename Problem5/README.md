@@ -32,15 +32,15 @@
 
 ## API Endpoints
 
-1. Get All Users
+**Get All Users**
 
-  Endpoint: GET /get
+Endpoint: GET /get
 
-  Description: Retrieves a list of users, optionally filtered by name.
+Description: Retrieves a list of users, optionally filtered by name.
 
-  Query Parameters:
+Query Parameters:
 
-  name (optional) - Filter users by name (case-insensitive, contains search).
+name (optional) - Filter users by name (case-insensitive, contains search).
 
 Response:
 ```json
