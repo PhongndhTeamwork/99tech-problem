@@ -30,7 +30,7 @@
    ```
 
 
-API Endpoints
+## API Endpoints
 
 1. Get All Users
 
@@ -43,11 +43,12 @@ Query Parameters:
 name (optional) - Filter users by name (case-insensitive, contains search).
 
 Response:
-
+```sh
 [
   { "id": 1, "name": "John Doe", "email": "john@example.com" },
   { "id": 2, "name": "Jane Doe", "email": "jane@example.com" }
 ]
+```
 
 2. Create User
 
@@ -56,18 +57,20 @@ Endpoint: GET /create
 Description: Creates a new user.
 
 Request Body:
-
+```sh
 {
   "name": "John Doe",
   "email": "john@example.com"
 }
+```
 
 Response:
-
+```sh
 {
   "message": "User created successfully",
   "user": { "id": 1, "name": "John Doe", "email": "john@example.com" }
 }
+```
 
 3. Update User
 
@@ -76,23 +79,24 @@ Endpoint: GET /update/:id
 Description: Updates user information.
 
 Request Parameters:
-
+```sh
 id (required) - User ID to update.
+```
 
 Request Body:
-
+```sh
 {
   "name": "Updated Name",
   "email": "updated@example.com"
 }
-
+```
 Response:
-
+```sh
 {
   "message": "User updated successfully",
   "user": { "id": 1, "name": "Updated Name", "email": "updated@example.com" }
 }
-
+```
 4. Delete User
 
 Endpoint: GET /delete/:id
@@ -100,24 +104,27 @@ Endpoint: GET /delete/:id
 Description: Deletes a user by ID.
 
 Request Parameters:
-
+```sh
 id (required) - User ID to delete.
+```
 
 Response:
-
+```sh
 {
   "message": "User deleted successfully"
 }
+```
 
 Error Handling
 
 All endpoints return a 500 status code with the following response if an error occurs:
-
+```sh
 {
   "error": "Something went wrong"
 }
+```
 
-Technologies Used
+## Technologies Used
 
 Express.js - Backend framework
 
