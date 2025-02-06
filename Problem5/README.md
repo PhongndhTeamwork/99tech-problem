@@ -32,7 +32,7 @@
 
 ## API Endpoints
 
-**Get All Users**
+**1. Get All Users**
 
 Endpoint: GET /get
 
@@ -50,7 +50,7 @@ Response:
 ]
 ```
 
-2. Create User
+**2. Create User**
 
 Endpoint: GET /create
 
@@ -72,7 +72,7 @@ Response:
 }
 ```
 
-3. Update User
+**3. Update User**
 
 Endpoint: GET /update/:id
 
@@ -97,7 +97,7 @@ Response:
   "user": { "id": 1, "name": "Updated Name", "email": "updated@example.com" }
 }
 ```
-4. Delete User
+**4. Delete User**
 
 Endpoint: GET /delete/:id
 
